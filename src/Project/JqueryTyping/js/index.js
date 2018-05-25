@@ -55,7 +55,7 @@ $(document).ready(function () {
         var nextLetter = currentSentence[letterIndex]; // sets nextLetter = the current letterIndex
         currentLetterDiv.text(nextLetter); //sets the content of currentLetterDiv = nextLetter
 
-        if (letterIndex < currentSentence.length -1) { // if letterIndex hasn't gone through the entire word yet
+        if (letterIndex < currentSentence.length - 1) { // if letterIndex hasn't gone through the entire word yet
             if (event.which === currentLetter.charCodeAt()) { // if key pressed is correct
                 $("#feedback").append("<span class = 'glyphicon glyphicon-ok'></span>"); //set ok icon
             } else {
@@ -67,15 +67,15 @@ $(document).ready(function () {
         if (letterIndex == currentSentence.length) { // if letterIndex = the end of the currentSentence
             $("#sentence").empty(); //get the sentence div and empty it
             sentenceIndex++; //advance sentenceIndex by 1
-            currentSentence = sentences[sentenceIndex]; //set currentSentence = the sentence in teh sentences array 
+            currentSentence = sentences[sentenceIndex]; //set currentSentence = the sentence in teh sentences array
             //at position sentenceIndex
-            $("#sentence").append(sentences[sentenceIndex]); // set content of #sentence to the current sentence 
+            $("#sentence").append(sentences[sentenceIndex]); // set content of #sentence to the current sentence
             letterIndex = 0; //reset the letter index to 0 to start at the beginning of the new sentence
-            if (sentenceIndex < sentences.length - 1) { 
+            if (sentenceIndex < sentences.length - 1) {
                 var nextLetter = currentSentence[letterIndex];
             }
             currentLetterDiv.text(nextLetter); // set the content of the currentLetterDiv = nextLetter
-            $("#highlightBlock").css({ left: 17 }); //resets the position of the highlightBlock
+            $("#highlightBlock").css({left: 17}); //resets the position of the highlightBlock
             $("#feedback").empty(); //clears the feedback div
         }
 
@@ -92,8 +92,10 @@ $(document).ready(function () {
                     window.location.reload(); // reload the page
                 } else {
                     return;
-                };
+                }
+                ;
             }, 4000);
-        };
+        }
+        ;
     })
 });
