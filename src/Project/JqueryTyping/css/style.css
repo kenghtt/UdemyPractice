@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0;	
+  padding: 0;
 }
 body {
   margin-top: 60px;
@@ -24,7 +24,7 @@ body {
 }
 
 #next-letter {
-  font-size: 45px; 
+  font-size: 45px;
 }
 
 .keys-row {
@@ -46,3 +46,26 @@ body {
  .highlight {
    background-color: yellow;
  }
+
+ #countdowntimer {
+   font-family: "Times New Roman";
+   /*padding-left:3px;*/
+   font-size:70px;
+   display: inline-block;
+   width: 120px;
+   border: 1px solid #000;
+   text-align: center;
+
+ }
+ #remainingTime{
+   font-size: 15px;
+ }
+ #timerContainer{
+
+   padding-right: 50px;
+   /*alignment: right;*/
+   float:right;
+
+ }
+
+
