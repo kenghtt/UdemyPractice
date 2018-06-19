@@ -1,6 +1,6 @@
 $(document).ready(function () {
     //set sentences as variables
-    var sentences = ['ten ate neite ate nee enet ite ate inet ent eate', 'Too ato too nOt enot one totA not anot tOO aNot', 'oat itain oat tain nate eate tea anne inant nean', 'itant eate anot eat nato inate eat anot tain eat', 'nee ene ate ite tent tiet ent ine ene ete ene ate'];
+    var sentences = ['There once was a boy named Jeremy and ', 'Too ato too nOt enot one totA not anot tOO aNot', 'oat itain oat tain nate eate tea anne inant nean', 'itant eate anot eat nato inate eat anot tain eat', 'nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate'];
     //set word container to the first place in the sentences array on load
     var sentenceIndex = 0;
 
@@ -49,7 +49,9 @@ $(document).ready(function () {
             start = event.timeStamp;
         }
 
-        $("#highlightBlock").css("left", "+=17.5px"); //moves the highlightBlock to the left by offsetting it to the right
+        // $("#highlightBlock").css("left", "+=17.5px"); //moves the highlightBlock to the left by offsetting it to the right
+        $("#highlightBlock").css("left", "+=17px"); //moves the highlightBlock to the left by offsetting it to the right
+
 
         letterIndex++; //advances the letterIndex by 1
         var nextLetter = currentSentence[letterIndex]; // sets nextLetter = the current letterIndex

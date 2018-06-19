@@ -10,14 +10,20 @@ body {
   font-size: 24px;
   letter-spacing: 3px;
     height: 120px;
+    border-style: solid;
+    border-width: 5px;
 }
 
 #highlightBlock {
   position: absolute;
   margin-top: 10px;
   width: 15px;
-  height: 15px;
+  height: 25px;
   background-color: yellow;
+    margin-left: 145px;
+    margin-top: 3px;
+    padding-left: 7px;
+
 }
 
 .keyboard-container {
@@ -36,6 +42,7 @@ body {
 #feedback {
   font-size: 15px;
     margin: auto;
+    height: 20px;
 }
 .glyphicon-ok {
   color: #1DA237
@@ -74,6 +81,12 @@ body {
 
      padding-left: 150px;
      margin: auto;
+     font-family:Verdana, sans-serif;
+ }
+ #wordSplit{
+     font-size:18px;
+     font-family:Verdana, sans-serif;
+
  }
 
 
