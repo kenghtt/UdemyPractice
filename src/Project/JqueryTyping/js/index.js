@@ -22,6 +22,7 @@ $(document).ready(function () {
 
     $(document).keydown(function (event) { //show uppercase keyboard and hide lowercase keyboard on shift key press
         var keyDown = event.which;
+        var keyUpExample = event.whic
         if (keyDown === 16) {
             $("#keyboard-upper-container").show();
             $("#keyboard-lower-container").hide();
