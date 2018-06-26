@@ -47,11 +47,21 @@
 //         clearInterval(downloadTimer);
 // },1000)
 //
-var timeleft = 60;
-var downloadTimer = setInterval(function () {
-    timeleft--;
-    document.getElementById("countdowntimer").textContent = timeleft;
-    if (timeleft <= 0)
-        clearInterval(downloadTimer);
-}, 1000);
-;
+
+function timer(currentLetter) {
+    var timeleft = 60;
+    var downloadTimer = setInterval(function () {
+        timeleft--;
+        document.getElementById("countdowntimer").textContent = timeleft;
+
+        if(timeleft==58){
+            alert(currentLetter);
+        }
+
+        if (timeleft <= 0)
+
+
+            clearInterval(downloadTimer);
+    }, 1000);
+
+}
