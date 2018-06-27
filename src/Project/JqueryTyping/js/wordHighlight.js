@@ -5,19 +5,52 @@
  */
 // define(function () {
     var wordSplit = document.getElementById("wordSplit")
-    var currentLetter = wordSplit.getElementsByTagName("span")
+    var listOfWords = wordSplit.getElementsByTagName("span")
 
 // var currentLetter1= document.getElementById('wordSplit').getElementsByTagName('span')[0]
 
-document.getElementById('wordSplit').getElementsByTagName('span')[0].innerText   //There
+// var currentLetter = document.getElementById('wordSplit').getElementsByTagName('span')[0].innerText   //There
+
+
     // if(currentletter[i])
 
-for(var i = 0, l = currentLetter.length; i < l; i++){
-    obj[spans[i].id] = spans[i].textContent || spans[i].innerText;
-}
+// for(var i = 0, l = listOfWords.length; i < l; i++){
 
 
-timer(wordSplit);
+// l = listOfWords.length;
+
+var i = 0;
+
+    do{
+        var currentLetter = document.getElementById('wordSplit').getElementsByTagName('span')[i].innerText   //There
+
+        // document.getElementById('wordSplit').getElementsByTagName('span')[i].style.backgroundColor = "Yellow";    //this line works, but highlights the word
+        currentLetter[i].style.backgroundColor = "Yellow";          //this line is breaking, coming as undefined
+        i++;
+        document.getElementById('wordSplit').getElementsByTagName('span')[i-1].style.backgroundColor = ""
+
+
+    }while(i < listOfWords.length){
+
+
+    }
+
+    // currentLetter.body.style.color = "Yellow";
+    // currentLetter.background.color = "Blue";
+    // document.getElementById('wordSplit').getElementsByTagName('span')[0].innerText;
+    // document.getElementById('wordSplit').getElementsByTagName('span')[i-1].style.backgroundColor = ""
+
+    document.getElementById('wordSplit').getElementsByTagName('span')[i].style.backgroundColor = "Yellow"
+
+    // document.getElementById("centerbox1").style.backgroundColor = '#99C262';
+
+
+    // document.body.style.cssText = 'color:#abcdef;';
+    // timer(currentLetter);
+
+// }
+
+
 
     // alert(currentLetter);
 
