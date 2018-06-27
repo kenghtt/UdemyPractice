@@ -70,12 +70,15 @@ body {
  }
  #remainingTime{
    font-size: 15px;
+     text-align: center;
  }
  #timerContainer{
 
    padding-right: 50px;
    /*alignment: right;*/
    float:right;
+     margin-right: -30px;
+     margin-top: -90px
 
  }
 
