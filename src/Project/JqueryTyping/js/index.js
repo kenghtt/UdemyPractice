@@ -1,7 +1,25 @@
 $(document).ready(function () {
     //set sentences as variables
-    var sentences = ['There once was a boy named Jeremy and ', 'Too ato too nOt enot one totA not anot tOO aNot', 'oat itain oat tain nate eate tea anne inant nean', 'itant eate anot eat nato inate eat anot tain eat', 'nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate'];
+    // var sentences = ['He was a boy ', 'Too ato too nOt enot one totA not anot tOO aNot', 'oat itain oat tain nate eate tea anne inant nean', 'itant eate anot eat nato inate eat anot tain eat', 'nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate','nee ene ate ite tent tiet ent ine ene ete ene ate'];
     //set word container to the first place in the sentences array on load
+
+
+    // document.getElementById("wordSplit").getElementsByTagName("span")[1].innerHTML
+
+
+    var lengthOfSpan = document.getElementById("wordSplit").getElementsByTagName("span").length;
+    var sentences = [];
+
+    for (var i = 0; i < lengthOfSpan; i++) {
+
+        // var sentenceSpan = sentences.push(document.getElementById("wordSplit").getElementsByTagName("span")[i].innerHTML);
+        sentences.push(document.getElementById("wordSplit").getElementsByTagName("span")[i].innerHTML);
+
+    }
+
+
+    // var sentences = "";
+
     var sentenceIndex = 0;
 
     var letterIndex = 0;

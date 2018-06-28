@@ -7,19 +7,9 @@
     var wordSplit = document.getElementById("wordSplit")
     var listOfWords = wordSplit.getElementsByTagName("span")
 
-// var currentLetter1= document.getElementById('wordSplit').getElementsByTagName('span')[0]
-
-// var currentLetter = document.getElementById('wordSplit').getElementsByTagName('span')[0].innerText   //There
-
-
-    // if(currentletter[i])
-
-// for(var i = 0, l = listOfWords.length; i < l; i++){
-
-
-// l = listOfWords.length;
 
 var i = 0;
+    var j = 0;
 
 
 
@@ -39,27 +29,23 @@ var i = 0;
 
 
 
-
-    // currentLetter.body.style.color = "Yellow";
-    // currentLetter.background.color = "Blue";
-    // document.getElementById('wordSplit').getElementsByTagName('span')[0].innerText;
-    // document.getElementById('wordSplit').getElementsByTagName('span')[i-1].style.backgroundColor = ""
+// var keyDownLetter = document.addEventListener("keydown", keyDownFunction);
+var currentLetter = document.getElementById('wordSplit').getElementsByTagName('span')[i].innerText[j]   //T
 
 
 
-    // document.getElementById('wordSplit').getElementsByTagName('span')[i].style.backgroundColor = "Yellow"
+document.getElementById('wordSplit').getElementsByTagName('span')[i].addEventListener("keydown", keyDownFunction);
 
-    // document.getElementById("centerbox1").style.backgroundColor = '#99C262';
-
-var keyDownLetter = document.addEventListener("keydown", keyDownFunction);
 
 
 
  function keyDownFunction(){
-     var currentLetter = document.getElementById('wordSplit').getElementsByTagName('span')[i].innerText   //There
-     i++;
+
 
      if(currentLetter == keyDownLetter){
+
+         j++;    //increments to the next letter
+      i++;  //increments to the next word
 
          alert("KEY DOWN WORKED")
      }
