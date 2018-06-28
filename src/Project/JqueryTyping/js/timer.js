@@ -55,9 +55,9 @@ var downloadTimer = setInterval(function(){
     timeleft--;
     document.getElementById("countdowntimer").textContent = timeleft;
 
-    if(timeleft == 58){
-        alert("YOU GOT IT")
-    }
+    // if(timeleft == 58){
+    //     alert("YOU GOT IT")
+    // }
 
     if(timeleft <= 0)
         clearInterval(downloadTimer);

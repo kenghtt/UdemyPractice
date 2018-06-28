@@ -34,7 +34,7 @@ var currentLetter = document.getElementById('wordSplit').getElementsByTagName('s
 
 
 
-document.getElementById('wordSplit').getElementsByTagName('span')[i].addEventListener("keydown", keyDownFunction);
+// document.getElementById('wordSplit').getElementsByTagName('span')[i].addEventListener("keydown", keyDownFunction);
 
 
 
