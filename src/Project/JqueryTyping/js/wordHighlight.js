@@ -21,47 +21,53 @@
 
 var i = 0;
 
-    do{
-        var currentLetter = document.getElementById('wordSplit').getElementsByTagName('span')[i].innerText   //There
-
-        // document.getElementById('wordSplit').getElementsByTagName('span')[i].style.backgroundColor = "Yellow";    //this line works, but highlights the word
-        currentLetter[i].style.backgroundColor = "Yellow";          //this line is breaking, coming as undefined
-        i++;
-        document.getElementById('wordSplit').getElementsByTagName('span')[i-1].style.backgroundColor = ""
 
 
-    }while(i < listOfWords.length){
+// do{
+    //
+    //     // if(onkeydown == currentLetter) {
+    //     //     alert("You pressed the correct Letter :) Congrats!")
+    //     //     alert("You pressed the correct Letter :) Congrats!")
+    //     //
+    //     //     // document.getElementById('wordSplit').getElementsByTagName('span')[i].style.backgroundColor = "Yellow";    //this line works, but highlights the word
+    //     //     currentLetter[i].style.backgroundColor = "Yellow";          //this line is breaking, coming as undefined
+    //     //     i++;
+    //     //     document.getElementById('wordSplit').getElementsByTagName('span')[i - 1].style.backgroundColor = ""
+    //     // }
+    //
+    // }while(i < listOfWords.length)
 
 
-    }
+
 
     // currentLetter.body.style.color = "Yellow";
     // currentLetter.background.color = "Blue";
     // document.getElementById('wordSplit').getElementsByTagName('span')[0].innerText;
     // document.getElementById('wordSplit').getElementsByTagName('span')[i-1].style.backgroundColor = ""
 
-    document.getElementById('wordSplit').getElementsByTagName('span')[i].style.backgroundColor = "Yellow"
+
+
+    // document.getElementById('wordSplit').getElementsByTagName('span')[i].style.backgroundColor = "Yellow"
 
     // document.getElementById("centerbox1").style.backgroundColor = '#99C262';
 
-
-    // document.body.style.cssText = 'color:#abcdef;';
-    // timer(currentLetter);
-
-// }
+var keyDownLetter = document.addEventListener("keydown", keyDownFunction);
 
 
 
-    // alert(currentLetter);
+ function keyDownFunction(){
+     var currentLetter = document.getElementById('wordSplit').getElementsByTagName('span')[i].innerText   //There
+     i++;
+
+     if(currentLetter == keyDownLetter){
+
+         alert("KEY DOWN WORKED")
+     }
+     else {
+         alert("KEY DOWN NOT NOT NOT WORKED")
+
+     }
 
 
-// var spans = document.getElementById('xyx').getElementsByTagName('span'),
-//     obj = {};
-//
-// for(var i = 0, l = spans.length; i < l; i++){
-//     obj[spans[i].id] = spans[i].textContent || spans[i].innerText;
-// }
 
-
-    // return {};
-// });
+ }
